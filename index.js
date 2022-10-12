@@ -13,6 +13,6 @@ app.use(router);
 connectToDb();
 
 const port = process.env.PORT || 5001;
-app.listen(port, (req, res) => {
-    console.log("app is listening on port " + port);
+app.listen(port, () => {
+    console.log("App is listening on port " + port);
 })
